@@ -1,0 +1,48 @@
+.palette {
+
+    display: none;
+    position:relative;
+    
+    .color1 {
+        width: 200px;
+        height: 200px;
+        background-color: $dark-blue1;
+    }
+
+    .color2 {
+        width: 200px;
+        height: 200px;
+        background-color: $dark-blue3;
+    }
+
+    .color3 {
+        width: 200px;
+        height: 200px;
+        background-color: $light-blue1;
+    }
+
+    .color4 {
+        width: 200px;
+        height: 200px;
+        background-color: $cyan1;
+    }
+
+    .color5 {
+        width: 200px;
+        height: 200px;
+        background-color: $light-cyan1;
+    }
+
+    .color6 {
+        width: 200px;
+        height: 200px;
+        background-color: $white-smoke1;
+    }
+
+    .color7 {
+        width: 200px;
+        height: 200px;
+        background-color: $blue2;
+    }
+
+}

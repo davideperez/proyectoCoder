@@ -1,0 +1,117 @@
+/* -------   Index  --------- */
+
+.hero {
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    height: 100vh;
+    background-image: url(/img/EA-photo/6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    h1 {
+        color: $blue2;
+        font-size: 2rem;
+        letter-spacing: .02rem;
+        font-weight: 900;
+        font-stretch: condensed;
+        font-family: "Montserrat", sans-serif;
+        margin: 0 0 0 4rem;
+        align-content: left;
+        width: 50%;
+    }
+
+    h2 {
+        color: $dark-blue1;
+        font-size: 3rem;
+        letter-spacing: .01rem;
+        font-family: "Montserrat", sans-serif;
+        margin: 0rem 4rem;
+        align-content: left;
+        width: 50%;
+
+    }
+
+    p {
+        width: 30%;
+        font-size: 1.2rem;
+        text-align: left;
+        margin: 1rem 4rem;
+        padding: 0.7em;
+        background-color: rgb(231, 231, 231, 0.6);
+        border-radius: 2%;
+    }
+    a {
+        width: 5rem;
+    }
+    .botonHero {
+        @extend %button1;
+        width: 140px;
+    }
+    
+    .botonHero:hover {
+        @extend %button1Hover;
+    }
+}
+
+.hero2 {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; //es CEnter de la columna.\
+    align-items: flex-end;
+
+    height: 100vh;
+    background-image: url(/img/EA-photo/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    h1 {
+        color: $blue2;
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: right;
+        letter-spacing: .02rem;
+        font-stretch: condensed;
+        font-family: "Montserrat", sans-serif;
+        margin: 0 4rem 0 4rem;
+        align-content: right;
+        width: 50%;
+
+    }
+
+    h2 {
+        color: $dark-blue1;
+        font-size: 3rem;
+        text-align: right;
+        letter-spacing: .01rem;
+        font-family: "Montserrat", sans-serif;
+        margin: 0rem 4rem;
+        align-content: right;
+        width: 50%;
+
+    }
+
+    p {
+        width: 30%;
+        font-size: 1.2rem;
+        text-align: left;
+        margin: 1rem 4rem;
+        padding: 0.7em;
+        background-color: white;
+    }
+    
+    .botonHero {
+    @extend %button1;
+
+    }
+
+    .botonHero:hover {
+    @extend %button1Hover;
+    }
+}

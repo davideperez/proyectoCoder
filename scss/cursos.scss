@@ -1,0 +1,108 @@
+/* -------   cursos.html  --------- */
+
+.containerCursos {
+
+    .heroCursos {
+
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+
+        height: 100vh;
+        background-image: url(/img/EA-photo/7.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h1 {
+        color: white;
+        font-size: 6rem;
+        letter-spacing: .02rem;
+        font-weight: 900;
+        font-stretch: condensed;
+        font-family: "Montserrat", sans-serif;
+        margin: 0 0 0 4rem;
+        align-content: left;
+        width: 50%;
+    }
+
+    h2 {
+        color: $dark-blue1;
+        font-size: 3rem;
+        letter-spacing: .01rem;
+        font-family: "Montserrat", sans-serif;
+        margin: 0rem 4rem;
+        align-content: left;
+        width: 50%;
+    }
+
+    p {
+        width: 30%;
+        font-size: 1.2rem;
+        text-align: left;
+        margin: 1rem 4rem;
+        padding: 0.7em;
+        background-color: rgb(231, 231, 231, 0.6);
+        border-radius: 2%;
+    }
+    a {
+        width: 5rem;
+    }
+
+    .listaCursos {
+        
+        padding: 4rem;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "curso1 curso1 curso2"
+            "curso1 curso1 curso2"
+            "curso3 curso4 curso5";
+            .imagenCurso{
+            width: 100px;
+        }
+        h2 {
+            color: $dark-blue1;
+            font-size:1.5rem;
+            letter-spacing: .01rem;
+            font-family: "Montserrat", sans-serif;
+            margin: 0rem 4rem;
+            align-content: left;
+            width: 50%;
+        }
+
+
+        .curso1 {
+            @extend %flexCursos;
+            grid-area: curso1;
+            background-color: orange;
+        }
+        .curso2 {
+            @extend %flexCursos;
+
+            grid-area: curso2;
+            background-color: red;
+
+        }
+        .curso3 {
+
+        }
+        .curso4 {
+            @extend %flexCursos;
+            grid-area: curso4;
+            background-color: green;
+
+        }
+        .curso5 {
+            @extend %flexCursos;
+            grid-area: curso5;
+            background-color: cyan;
+
+        }
+    }
+}

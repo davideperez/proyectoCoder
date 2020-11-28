@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap");
+/* -------   RESET  --------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.hero2 .botonHero, .hero .botonHero {
+  letter-spacing: 0.1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-weight: 900;
+  margin: 0 4rem;
+  font-size: 0.8rem;
+  color: white;
+  background: #0636c3;
+  border: 2px solid #011c5d;
+}
+
+.hero2 .botonHero:hover, .hero .botonHero:hover {
+  background: #011c5d;
+  border: 2px solid #011c5d;
+}
+
+.containerCursos .listaCursos .curso5, .containerCursos .listaCursos .curso4, .containerCursos .listaCursos .curso2, .containerCursos .listaCursos .curso1 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+/* .container {
+    display: flex;
+    padding: 0 20%;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+/* -------   Header  --------- */
+header {
+  width: 100%;
+  padding: 0rem 4rem;
+  font-size: 1.2rem;
+  position: fixed;
+  background-color: rgba(231, 231, 231, 0.65);
+}
+header nav {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: left;
+}
+header nav .logo {
+  width: 4rem;
+  margin: 0 1rem;
+}
+header nav .menu {
+  display: flex;
+  flex-flow: row;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  margin: 1rem;
+  position: relative;
+  padding: 1rem;
+}
+header nav ul li a {
+  color: #0636c3;
+}
+header nav ul li:hover {
+  background-color: rgba(6, 54, 195, 0.5);
+  border-radius: 0.5rem;
+}
+header nav ul li:hover a {
+  color: white;
+}
+header nav ul li:hover .submenu {
+  display: flex;
+}
+header nav ul .submenu {
+  display: none;
+  flex-direction: column;
+  background-color: #0636c3;
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+}
+header nav ul .submenu li {
+  display: flex;
+  margin: 0;
+}
+header nav ul .submenu li a {
+  color: white;
+}
+header nav ul .submenu li:hover {
+  background-color: white;
+  color: white;
+}
+header nav ul .submenu li:hover a {
+  color: #0636c3;
+}
+
+/* -------   Footer  --------- */
+footer {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 100%;
+  padding: 3rem 4rem;
+  background-color: #e7e7e7;
+}
+footer h2 {
+  margin-bottom: 1rem;
+  color: #0636c3;
+}
+footer img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.1rem;
+}
+
+.palette {
+  display: none;
+  position: relative;
+}
+.palette .color1 {
+  width: 200px;
+  height: 200px;
+  background-color: #011c5d;
+}
+.palette .color2 {
+  width: 200px;
+  height: 200px;
+  background-color: #00298b;
+}
+.palette .color3 {
+  width: 200px;
+  height: 200px;
+  background-color: #4eb1ff;
+}
+.palette .color4 {
+  width: 200px;
+  height: 200px;
+  background-color: #5cfaff;
+}
+.palette .color5 {
+  width: 200px;
+  height: 200px;
+  background-color: #c2fff6;
+}
+.palette .color6 {
+  width: 200px;
+  height: 200px;
+  background-color: #e7e7e7;
+}
+.palette .color7 {
+  width: 200px;
+  height: 200px;
+  background-color: #0636c3;
+}
+
+/* -------   Index  --------- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(/img/EA-photo/6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero h1 {
+  color: #0636c3;
+  font-size: 2rem;
+  letter-spacing: 0.02rem;
+  font-weight: 900;
+  font-stretch: condensed;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 0 4rem;
+  align-content: left;
+  width: 50%;
+}
+.hero h2 {
+  color: #011c5d;
+  font-size: 3rem;
+  letter-spacing: 0.01rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 0rem 4rem;
+  align-content: left;
+  width: 50%;
+}
+.hero p {
+  width: 30%;
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 1rem 4rem;
+  padding: 0.7em;
+  background-color: rgba(231, 231, 231, 0.6);
+  border-radius: 2%;
+}
+.hero a {
+  width: 5rem;
+}
+.hero .botonHero {
+  width: 140px;
+}
+.hero2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+  background-image: url(/img/EA-photo/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero2 h1 {
+  color: #0636c3;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: right;
+  letter-spacing: 0.02rem;
+  font-stretch: condensed;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 4rem 0 4rem;
+  align-content: right;
+  width: 50%;
+}
+.hero2 h2 {
+  color: #011c5d;
+  font-size: 3rem;
+  text-align: right;
+  letter-spacing: 0.01rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 0rem 4rem;
+  align-content: right;
+  width: 50%;
+}
+.hero2 p {
+  width: 30%;
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 1rem 4rem;
+  padding: 0.7em;
+  background-color: white;
+}
+/* -------   cursos.html  --------- */
+.containerCursos .heroCursos {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(/img/EA-photo/7.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.containerCursos h1 {
+  color: white;
+  font-size: 6rem;
+  letter-spacing: 0.02rem;
+  font-weight: 900;
+  font-stretch: condensed;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 0 4rem;
+  align-content: left;
+  width: 50%;
+}
+.containerCursos h2 {
+  color: #011c5d;
+  font-size: 3rem;
+  letter-spacing: 0.01rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 0rem 4rem;
+  align-content: left;
+  width: 50%;
+}
+.containerCursos p {
+  width: 30%;
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 1rem 4rem;
+  padding: 0.7em;
+  background-color: rgba(231, 231, 231, 0.6);
+  border-radius: 2%;
+}
+.containerCursos a {
+  width: 5rem;
+}
+.containerCursos .listaCursos {
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "curso1 curso1 curso2" "curso1 curso1 curso2" "curso3 curso4 curso5";
+}
+.containerCursos .listaCursos .imagenCurso {
+  width: 100px;
+}
+.containerCursos .listaCursos h2 {
+  color: #011c5d;
+  font-size: 1.5rem;
+  letter-spacing: 0.01rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 0rem 4rem;
+  align-content: left;
+  width: 50%;
+}
+.containerCursos .listaCursos .curso1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: curso1;
+  background-color: orange;
+}
+.containerCursos .listaCursos .curso2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  grid-area: curso2;
+  background-color: red;
+}
+.containerCursos .listaCursos .curso4 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: curso4;
+  background-color: green;
+}
+.containerCursos .listaCursos .curso5 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+  grid-area: curso5;
+  background-color: cyan;
+}
+
+/*
+
+- Index.html
+    - Dar formato a botones de los heros.
+    - Optimizar el codigo de los heros.
+- QuienesSomos.html: Importar fichas de cada uno.
+- Nav: Fondo Nav transparente con animacion a blanco a medida que scrolleo.
+- Cursos.html: Con grid? 1 grande, y 2 chicos? o cuadricula.
+- Footer: Form de escribinos.
+- MediaQuerys
+
+
+
+
+
+ */
