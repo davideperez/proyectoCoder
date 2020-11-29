@@ -6,7 +6,7 @@
 %button1 {
     letter-spacing: .1rem;
     padding: .7rem 1rem;
-    border-radius: .5rem;
+    //border-radius: .5rem;
     text-align: center;
     font-weight: 900;
     margin: 0 4rem;
@@ -19,17 +19,4 @@
 %button1Hover {
     background: $dark-blue1;
     border: 2px solid $dark-blue1;
-}
-
-%flexCursos {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-
-@mixin flex($fd, $jc, $ai) {
-    display: flex;
-    flex-direction: $fd;
-    justify-content: $jc;
-    align-items: $ai;
 }

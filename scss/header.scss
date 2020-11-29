@@ -1,0 +1,84 @@
+header {
+
+    display: block;
+    width: 100%;
+    padding: 0rem 4rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: fixed;
+    //background-color: rgb(255, 255, 255, 0.65);
+    background-image:
+    linear-gradient(
+    white, rgb(255, 255, 255, 0.5));
+
+    nav {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            width: 4rem;
+            //margin: 0 1rem;
+        }
+
+        .menu {
+            display: flex;
+            flex-flow: row;
+        }
+        
+        ul {
+            li {
+                margin: 1rem;
+                position: relative;
+                padding: 1rem;
+
+                a {
+                    color:$blue2;
+                }
+
+                div {
+                    a {
+                        color: blue;
+                    }
+                }
+            }
+
+            li:hover {
+                background-color:  rgb(6,54,195, 0.5);
+                a {
+                    color:white;
+                }
+            }
+
+            li:hover .submenu{
+                display: flex;
+            }
+            
+            .submenu {
+                display: none;
+                flex-direction: column;
+                background-color: $blue2;
+                position: absolute;
+                top: 3rem;
+                left: 2rem;
+
+                li {
+                    display: flex;
+                    margin: 0;
+                    a {
+                        color: white;
+                    }
+                }
+
+                li:hover {
+                    background-color:white;
+                    color: white;
+                    a {
+                        color: $blue2;
+                    }
+                }
+            }
+        }
+    }
+}

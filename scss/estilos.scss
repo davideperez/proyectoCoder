@@ -1,18 +1,46 @@
 @import "reset";
 @import "variables";
 @import "extends";
-@import "destacado";
+@import "mixin";
 @import "palette";
 
+@import "header";
+@import "footer";
+
 @import "index";
+@import "contacto";
 @import "cursos";
 
+@import "destacado";
 
-
-
-// To Do List
 
 /*
+//////////////////////////  DUDAS
+
+- No entiendo porque el header no queda centrado, queda con valores de position a su derecha.
+
+
+
+
+
+//////////////////////////  To Do List
+
+
+
+7- Aplicando Grids.
+    - Aplicar Grid a vista de Cursos.
+
+8- Transformaciones y animaciones.
+    - Aplicar scale en lhover de los cursos.
+    - Animacion al submenu
+
+9- Aplicando SASS Operaciones.
+    Hacer una operacion con SASS.
+
+13- Aplicar SEO a la pagina.
+
+14- Crear repositorio Git
+
 
 - Index.html
     - Dar formato a botones de los heros.

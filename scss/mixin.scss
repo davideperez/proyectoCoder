@@ -1,0 +1,28 @@
+
+@mixin hero ($height, $align, $justify){
+    display: flex;
+    flex-direction: column;
+    align-items: $align;
+    justify-content: $justify;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $height;
+}
+
+@mixin h1 ($color) {
+    color: $color;
+    font-size: 2rem;
+    letter-spacing: .02rem;
+    font-weight: 900;
+    font-stretch: condensed;
+    font-family: "Montserrat", sans-serif;
+}
+
+@mixin h2 ($color) {
+    color: $color;
+    font-size: 3rem;
+    letter-spacing: .01rem;
+    font-family: "Montserrat", sans-serif;
+}
