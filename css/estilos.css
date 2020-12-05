@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap");
 /* -------   RESET  --------- */
 * {
@@ -18,7 +19,7 @@ li {
   list-style: none;
 }
 
-.hero2 .botonHero, .hero .botonHero {
+.heroConsultorias .botonHero, .content .hero2 .botonHero, .content .hero .botonHero {
   letter-spacing: 0.1rem;
   padding: 0.7rem 1rem;
   text-align: center;
@@ -27,10 +28,10 @@ li {
   font-size: 0.8rem;
   color: white;
   background: #0636c3;
-  border: 2px solid #011c5d;
+  border: 2px solid #0636c3;
 }
 
-.hero2 .botonHero:hover, .hero .botonHero:hover {
+.heroConsultorias .botonHero:hover, .content .hero2 .botonHero:hover, .content .hero .botonHero:hover {
   background: #011c5d;
   border: 2px solid #011c5d;
 }
@@ -76,13 +77,14 @@ li {
 }
 
 header {
-  display: block;
+  display: grid;
   width: 100%;
   padding: 0rem 4rem;
   font-size: 1.2rem;
   font-weight: 700;
   position: fixed;
   background-image: linear-gradient(white, rgba(255, 255, 255, 0.5));
+  grid-area: header;
 }
 header nav {
   display: flex;
@@ -141,11 +143,12 @@ header nav ul .submenu li:hover a {
 }
 
 footer {
-  display: flex;
+  display: grid;
   flex-direction: row;
   align-content: center;
   padding: 3rem 4rem;
   background-color: #e7e7e7;
+  grid-area: footer;
 }
 footer h2 {
   margin-bottom: 1rem;
@@ -158,54 +161,10 @@ footer img {
 }
 
 /* -------   Index  --------- */
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  background-image: url(/img/EA-photo/6.png);
+.content {
+  grid-area: content;
 }
-.hero h1 {
-  color: #0636c3;
-  font-size: 2rem;
-  letter-spacing: 0.02rem;
-  font-weight: 900;
-  font-stretch: condensed;
-  font-family: "Montserrat", sans-serif;
-  margin: 0 0 0 4rem;
-  align-content: left;
-  width: 50%;
-}
-.hero h2 {
-  color: #011c5d;
-  font-size: 3rem;
-  letter-spacing: 0.01rem;
-  font-family: "Montserrat", sans-serif;
-  margin: 0rem 4rem;
-  align-content: left;
-  width: 50%;
-}
-.hero p {
-  font-size: 1.2rem;
-  padding: 0.7em;
-  background-color: rgba(231, 231, 231, 0.6);
-  border-radius: 2%;
-  text-align: left;
-  margin: 1rem 4rem;
-  width: 30%;
-}
-.hero a {
-  width: 5rem;
-}
-.hero .botonHero {
-  width: 140px;
-}
-.hero2 {
+.content .hero {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -217,7 +176,56 @@ footer img {
   height: 100vh;
   background-image: url(/img/EA-photo/1.png);
 }
-.hero2 h1 {
+.content .hero h1 {
+  color: #0636c3;
+  font-size: 2rem;
+  letter-spacing: 0.02rem;
+  font-weight: 900;
+  font-stretch: condensed;
+  font-family: "Montserrat", sans-serif;
+  text-align: right;
+  margin: 0 4rem 0 0rem;
+  align-content: right;
+  width: 50%;
+}
+.content .hero h2 {
+  color: #011c5d;
+  font-size: 3rem;
+  letter-spacing: 0.01rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: right;
+  margin: 0rem 4rem;
+  align-content: right;
+  width: 50%;
+}
+.content .hero p {
+  font-size: 1.2rem;
+  padding: 1.2em;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 2%;
+  text-align: left;
+  margin: 1rem 4rem;
+  width: 30%;
+}
+.content .hero a {
+  width: 5rem;
+}
+.content .hero .botonHero {
+  width: 140px;
+}
+.content .hero2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-image: url(/img/EA-photo/6.png);
+}
+.content .hero2 h1 {
   color: #0636c3;
   font-size: 2rem;
   letter-spacing: 0.02rem;
@@ -225,20 +233,19 @@ footer img {
   font-stretch: condensed;
   font-family: "Montserrat", sans-serif;
   margin: 0 4rem 0 4rem;
-  align-content: right;
+  text-align: left;
   width: 50%;
 }
-.hero2 h2 {
+.content .hero2 h2 {
   color: #011c5d;
   font-size: 3rem;
   letter-spacing: 0.01rem;
   font-family: "Montserrat", sans-serif;
-  width: 50%;
-  margin: 0rem 4rem;
-  text-align: right;
-  align-content: right;
+  width: 40%;
+  margin: 0rem 0 0 4rem;
+  text-align: left;
 }
-.hero2 p {
+.content .hero2 p {
   width: 30%;
   font-size: 1.2rem;
   text-align: left;
@@ -246,14 +253,198 @@ footer img {
   padding: 0.7em;
   background-color: white;
 }
+/* -------   cursos.html  --------- */
+.containerCursos {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+.containerCursos .heroCursos {
+  display: flex;
+  flex-flow: row nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  background-image: url(/img/EA-photo/7.png);
+  background-position-y: 0px;
+}
+.containerCursos h1 {
+  color: #3231b1;
+  font-size: 3rem;
+  letter-spacing: 0.01rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  margin: 0 0 0 4rem;
+  width: 100%;
+}
+.containerCursos h2 {
+  color: #011c5d;
+  font-size: 3rem;
+  letter-spacing: 0.01rem;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  text-align: left;
+}
+.containerCursos p {
+  display: flex;
+  width: 30%;
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 0 0 0 4rem;
+  padding: 0.7em;
+  border-radius: 2%;
+  background-color: rgba(231, 231, 231, 0.6);
+}
+.containerCursos a {
+  width: 5rem;
+}
+.containerCursos .cursos h2 {
+  padding: 8rem;
+  text-align: center;
+}
+.containerCursos .cursos .listaCursos {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  margin: 1rem 0rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas: "curso1 curso2 curso3" "curso4 curso5 curso6";
+  /*
+  .curso1 {
+      grid-area: curso1;
+      //background-color: orange;
+  }
+  .curso2 {
+      grid-area: curso2;
+      //background-color: red;
+  }
+  .curso3 {
+      grid-area: curso3;
+      //background-color: violet;
+  }
+  .curso4 {
+      grid-area: curso4;
+      //background-color: green;
+  }
+  .curso5 {
+      grid-area: curso5;
+      //background-color: cyan;
+  } */
+}
+.containerCursos .cursos .listaCursos .imagenCurso {
+  width: 100%;
+  transition: all 0.15s ease-in-out;
+}
+.containerCursos .cursos .listaCursos .imagenCurso:hover {
+  transform: scale(1.05);
+}
+.containerCursos .cursos .listaCursos h2 {
+  color: #011c5d;
+  font-size: 3rem;
+  letter-spacing: 0.01rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 0rem 4rem;
+  align-items: left;
+  width: 50%;
+}
+.containerCursos .cursos .listaCursos .curso1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: curso1;
+}
+.containerCursos .cursos .listaCursos .curso2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: curso2;
+}
+.containerCursos .cursos .listaCursos .curso3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: curso3;
+}
+.containerCursos .cursos .listaCursos .curso4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: curso4;
+}
+.containerCursos .cursos .listaCursos .curso5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: curso5;
+}
+
+.heroConsultorias {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-image: url(/img/EA-photo/5.png);
+}
+.heroConsultorias h1 {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 0.02rem;
+  font-weight: 900;
+  font-stretch: condensed;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 4rem 0 4rem;
+  text-align: left;
+  width: 50%;
+}
+.heroConsultorias h2 {
+  color: #011c5d;
+  font-size: 3rem;
+  letter-spacing: 0.01rem;
+  font-family: "Montserrat", sans-serif;
+  width: 50%;
+  margin: 0rem 0 0 4rem;
+  text-align: left;
+}
+.heroConsultorias p {
+  width: 30%;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 0.7em;
+  margin: 1rem 0 1rem 4rem;
+  border-radius: 2%;
+  background-color: rgba(231, 231, 231, 0.6);
+}
+.heroConsultorias a {
+  width: 5rem;
+}
+.heroConsultorias .botonHero {
+  width: 130px;
+}
+/*
+.content {
+    display: grid;
+    grid-area: content;
+    background-color: yellowgreen;
+    align-content: center;
+}
+
+*/
 .contacto {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
 }
 .contacto .contactHero {
   align-items: center;
   justify-content: left;
-  height: 40vh;
+  height: 100vh;
   background-image: url(/img/EA-photo/14.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -275,98 +466,19 @@ footer img {
   align-items: center;
 }
 
-/* -------   cursos.html  --------- */
-.containerCursos .heroCursos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 60vh;
-  background-image: url(/img/EA-photo/7.png);
-  background-position-y: 0px;
-}
-.containerCursos h1 {
-  color: white;
-  font-size: 2rem;
-  letter-spacing: 0.02rem;
-  font-weight: 900;
-  font-stretch: condensed;
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  align-content: center;
-  width: 100%;
-}
-.containerCursos p {
-  width: 30%;
-  font-size: 1.2rem;
-  text-align: left;
-  margin: 1rem 4rem;
-  padding: 0.7em;
-  border-radius: 2%;
-  background-color: rgba(231, 231, 231, 0.6);
-}
-.containerCursos a {
-  width: 5rem;
-}
-.containerCursos .listaCursos {
-  width: 100%;
-  display: grid;
-  align-content: center;
-  margin-top: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px 10px;
-  grid-template-areas: "curso1 curso2 curso3" "curso4 curso5 curso6" "curso7 curso8 curso9";
-}
-.containerCursos .listaCursos .imagenCurso {
-  width: 100%;
-  transition: all 0.15s ease-in-out;
-}
-.containerCursos .listaCursos .imagenCurso:hover {
-  transform: scale(1.1);
-}
-.containerCursos .listaCursos h2 {
-  color: #011c5d;
-  font-size: 3rem;
-  letter-spacing: 0.01rem;
-  font-family: "Montserrat", sans-serif;
-  margin: 0rem 4rem;
-  align-content: left;
-  width: 50%;
-}
-.containerCursos .listaCursos .curso1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: curso1;
-}
-.containerCursos .listaCursos .curso2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: curso2;
-}
-.containerCursos .listaCursos .curso3 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  grid-area: curso3;
-  background-color: violet;
-}
-.containerCursos .listaCursos .curso4 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: curso4;
-  background-color: green;
-}
-.containerCursos .listaCursos .curso5 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: curso5;
-  background-color: cyan;
+/*
+
+.bodyGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.05fr 0.7fr 0.1fr;
+    grid-template-areas: 
+    "header"
+    "content"
+    "footer";
 }
 
+*/
 .container {
   width: 90%;
   max-width: 1440px;
@@ -401,31 +513,38 @@ footer img {
 
 */
 /*
+
+Entregar 7 y 8.
+11- Aplicando SASS Operaciones.
+9 y 10 boostraps.
+
+
 //////////////////////////  DUDAS
 
 - No entiendo porque el header no queda centrado, queda con valores de position a su derecha.
-
-
-
-
+- Me gustaría que las imágenes llenen el ancho completo del site.
 
 //////////////////////////  To Do List
 
+9- Boostrap.
+    - Agregar grid de boostrap.
 
+10- Agregar carrousel de boostrap y mediaquerys.
+
+11- Aplicando SASS Operaciones.
+    Hacer una operacion con SASS.
+
+13- Aplicar SEO a la pagina.
+
+14- Crear repositorio Git
+
+//////////////////////////  DONE
 
 7- Aplicando Grids.
     - Aplicar Grid a vista de Cursos.
 
 8- Transformaciones y animaciones.
     - Aplicar scale en lhover de los cursos.
-    - Animacion al submenu
-
-9- Aplicando SASS Operaciones.
-    Hacer una operacion con SASS.
-
-13- Aplicar SEO a la pagina.
-
-14- Crear repositorio Git
 
 
 - Index.html
@@ -436,9 +555,5 @@ footer img {
 - Cursos.html: Con grid? 1 grande, y 2 chicos? o cuadricula.
 - Footer: Form de escribinos.
 - MediaQuerys
-
-
-
-
 
  */

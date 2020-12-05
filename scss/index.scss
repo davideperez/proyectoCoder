@@ -1,86 +1,88 @@
 /* -------   Index  --------- */
+.content {
+    grid-area: content;
+    .hero {
 
-.hero {
-
-    @include hero(100vh, flex-start, center);
-    background-image: url(/img/EA-photo/6.png);
+        @include hero(100vh, flex-end, center);
+        background-image: url(/img/EA-photo/1.png);
 
 
-    h1 {
-        @include h1($blue2);
+        h1 {
+            @include h1($blue2);
+            text-align: right;
+            margin: 0 4rem 0 0rem;
+            align-content: right;
+            width: 50%;
+        }
 
-        margin: 0 0 0 4rem;
-        align-content: left;
-        width: 50%;
-    }
+        h2 {
+            @include h2($dark-blue1);
+            text-align: right;
+            
+            margin: 0rem 4rem;
+            align-content: right;
+            width: 50%;
+        }
 
-    h2 {
-        @include h2($dark-blue1);
+        p {
+            font-size: 1.2rem;
+            padding: 1.2em;
+            background-color: rgb(255, 255, 255, 0.7);
+            border-radius: 2%;
+            text-align: left;
+            margin: 1rem 4rem;
+            width: 30%;
+        }
+        a {
+            width: 5rem;
+        }
+        .botonHero {
+            @extend %button1;
+            width: 140px;
+        }
         
-        margin: 0rem 4rem;
-        align-content: left;
-        width: 50%;
+        .botonHero:hover {
+            @extend %button1Hover;
+        }
     }
 
-    p {
-        font-size: 1.2rem;
-        padding: 0.7em;
-        background-color: rgb(231, 231, 231, 0.6);
-        border-radius: 2%;
-        text-align: left;
-        margin: 1rem 4rem;
-        width: 30%;
-    }
-    a {
-        width: 5rem;
-    }
-    .botonHero {
+    .hero2 {
+        
+        @include hero(100vh, flex-start, center);
+        background-image: url(/img/EA-photo/6.png);
+        
+        h1 {
+            @include h1($blue2);
+
+            margin: 0 4rem 0 4rem;
+            text-align: left;
+            width: 50%;
+        }
+
+        h2 {
+            @include h2($dark-blue1);
+
+            width: 40%;
+            margin: 0rem 0 0 4rem;
+            text-align: left;
+        }
+
+        p {
+            width: 30%;
+            font-size: 1.2rem;
+            text-align: left;
+            margin: 1rem 4rem;
+            padding: 0.7em;
+            background-color: white;
+        }
+        
+        .botonHero {
         @extend %button1;
-        width: 140px;
-    }
-    
-    .botonHero:hover {
+
+        }
+
+        .botonHero:hover {
         @extend %button1Hover;
-    }
-}
-
-.hero2 {
-    
-    @include hero(100vh, flex-end, center);
-    background-image: url(/img/EA-photo/1.png);
-    
-    h1 {
-        @include h1($blue2);
-
-        margin: 0 4rem 0 4rem;
-        align-content: right;
-        width: 50%;
-    }
-
-    h2 {
-        @include h2($dark-blue1);
-
-        width: 50%;
-        margin: 0rem 4rem;
-        text-align: right;
-        align-content: right;
-    }
-
-    p {
-        width: 30%;
-        font-size: 1.2rem;
-        text-align: left;
-        margin: 1rem 4rem;
-        padding: 0.7em;
-        background-color: white;
-    }
-    
-    .botonHero {
-    @extend %button1;
-
-    }
-
-    .botonHero:hover {
-    @extend %button1Hover;
+        }
     }
 }

@@ -8,38 +8,42 @@
 @import "footer";
 
 @import "index";
-@import "contacto";
 @import "cursos";
+@import "consultorias";
+@import "quienesSomos";
+@import "contacto";
 
 @import "destacado";
 
 
 /*
+
+9 y 10 boostraps.
+
+
 //////////////////////////  DUDAS
 
 - No entiendo porque el header no queda centrado, queda con valores de position a su derecha.
-
-
-
-
+- Me gustaría que las imágenes llenen el ancho completo del site.
 
 //////////////////////////  To Do List
 
+9- Boostrap.
+    - Agregar grid de boostrap.
 
+10- Agregar carrousel de boostrap y mediaquerys.
+
+13- Aplicar SEO a la pagina.
+
+14- Crear repositorio Git
+
+//////////////////////////  DONE
 
 7- Aplicando Grids.
     - Aplicar Grid a vista de Cursos.
 
 8- Transformaciones y animaciones.
     - Aplicar scale en lhover de los cursos.
-    - Animacion al submenu
-
-9- Aplicando SASS Operaciones.
-    Hacer una operacion con SASS.
-
-13- Aplicar SEO a la pagina.
-
-14- Crear repositorio Git
 
 
 - Index.html
@@ -50,9 +54,5 @@
 - Cursos.html: Con grid? 1 grande, y 2 chicos? o cuadricula.
 - Footer: Form de escribinos.
 - MediaQuerys
-
-
-
-
 
  */

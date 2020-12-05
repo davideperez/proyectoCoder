@@ -1,0 +1,40 @@
+.heroConsultorias {
+
+    @include hero(100vh, flex-start, center);
+    background-image: url(/img/EA-photo/5.png);
+    
+    h1 {
+        @include h1(white);
+        margin: 0 4rem 0 4rem;
+        text-align: left;
+        width: 50%;
+    }
+    h2 {
+        @include h2($dark-blue1);
+
+        width: 50%;
+        margin: 0rem 0 0 4rem;
+        text-align: left;
+    }
+    p {
+        width: 30%;
+        font-size: 1.2rem;
+        text-align: left;
+        padding: 0.7em;
+        margin: 1rem 0 1rem 4rem;
+        border-radius: 2%;
+        background-color: rgb(231, 231, 231, 0.6);
+    }
+    a {
+        width: 5rem;
+    }
+
+    .botonHero {
+        @extend %button1;
+        width: 130px;
+    }
+
+    .botonHero:hover {
+        @extend %button1Hover;
+    }
+}

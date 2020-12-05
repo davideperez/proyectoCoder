@@ -1,14 +1,14 @@
 
 .contacto {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
 
 
     .contactHero {
 
         align-items: center;
         justify-content: left;
-        height: 40vh;
+        height: 100vh;
         background-image: url(/img/EA-photo/14.png);
         background-position: center;
         background-repeat: no-repeat;
