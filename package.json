@@ -1,0 +1,22 @@
+{
+  "name": "coderproyect1",
+  "version": "1.0.0",
+  "description": "Website Espacio Audiologico, agregando SEO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davideperez/proyectoCoder.git"
+  },
+  "author": "DavidPS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davideperez/proyectoCoder/issues"
+  },
+  "homepage": "https://github.com/davideperez/proyectoCoder#readme",
+  "devDependencies": {
+    "sass": "^1.30.0"
+  }
+}
