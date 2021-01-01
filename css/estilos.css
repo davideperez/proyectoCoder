@@ -171,7 +171,7 @@ footer img {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  background-image: url(/img/EA-photo/1.png);
+  background-image: url(/img/EA-photo/1.jpg);
 }
 .content .hero h1 {
   color: #0636c3;
@@ -196,12 +196,12 @@ footer img {
 }
 .content .hero p {
   font-size: 1.2rem;
-  padding: 1.2em;
-  background-color: rgba(255, 255, 255, 0.7);
+  width: 30%;
   border-radius: 2%;
   text-align: left;
   margin: 1rem 4rem;
-  width: 30%;
+  padding: 1.2em;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .content .hero a {
   width: 5rem;
@@ -219,7 +219,7 @@ footer img {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  background-image: url(/img/EA-photo/6.png);
+  background-image: url(/img/EA-photo/6.jpg);
 }
 .content .hero2 h1 {
   color: #0636c3;
@@ -242,8 +242,8 @@ footer img {
   text-align: left;
 }
 .content .hero2 p {
-  width: 30%;
   font-size: 1.2rem;
+  width: 30%;
   text-align: left;
   margin: 1rem 4rem;
   padding: 0.7em;
@@ -267,7 +267,7 @@ footer img {
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
-  background-image: url(/img/EA-photo/7.png);
+  background-image: url(/img/EA-photo/7.jpg);
   background-position-y: 0px;
 }
 .containerCursos h1 {
@@ -278,7 +278,6 @@ footer img {
   margin: 0rem 0 0 4rem;
   width: 40%;
   text-align: left;
-  margin: 0 0 0 4rem;
   width: 100%;
 }
 .containerCursos h2 {
@@ -288,13 +287,12 @@ footer img {
   font-family: "Montserrat", sans-serif;
   margin: 0rem 0 0 4rem;
   width: 40%;
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 .containerCursos p {
-  display: flex;
-  width: 30%;
   font-size: 1.2rem;
+  width: 30%;
   text-align: left;
   margin: 0 0 0 4rem;
   padding: 0.7em;
@@ -317,27 +315,6 @@ footer img {
   grid-template-rows: 1fr 1fr;
   gap: 10px 10px;
   grid-template-areas: "curso1 curso2 curso3" "curso4 curso5 curso6";
-  /*
-  .curso1 {
-      grid-area: curso1;
-      //background-color: orange;
-  }
-  .curso2 {
-      grid-area: curso2;
-      //background-color: red;
-  }
-  .curso3 {
-      grid-area: curso3;
-      //background-color: violet;
-  }
-  .curso4 {
-      grid-area: curso4;
-      //background-color: green;
-  }
-  .curso5 {
-      grid-area: curso5;
-      //background-color: cyan;
-  } */
 }
 .containerCursos .cursos .listaCursos .imagenCurso {
   width: 100%;
@@ -393,7 +370,7 @@ footer img {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  background-image: url(/img/EA-photo/5.png);
+  background-image: url(/img/EA-photo/5.jpg);
 }
 .heroConsultorias h1 {
   color: white;
@@ -420,8 +397,8 @@ footer img {
   text-align: left;
 }
 .heroConsultorias p {
-  width: 30%;
   font-size: 1.2rem;
+  width: 30%;
   text-align: left;
   padding: 0.7em;
   margin: 1rem 0 1rem 4rem;
@@ -434,15 +411,6 @@ footer img {
 .heroConsultorias .botonHero {
   width: 130px;
 }
-/*
-.content {
-    display: grid;
-    grid-area: content;
-    background-color: yellowgreen;
-    align-content: center;
-}
-
-*/
 .contacto {
   display: flex;
   flex-flow: row wrap;
@@ -451,7 +419,7 @@ footer img {
   align-items: center;
   justify-content: left;
   height: 100vh;
-  background-image: url(/img/EA-photo/14.png);
+  background-image: url(/img/EA-photo/14.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

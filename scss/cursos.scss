@@ -1,106 +1,74 @@
 /* -------   cursos.html  --------- */
+.containerCursos {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
 
-//.content {
-//    grid-area: content;
-
-    .containerCursos {
+    .heroCursos {
         display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start;
+        flex-flow: row nowrap;
 
-        .heroCursos {
-            display: flex;
-            flex-flow: row nowrap;
-
-            @include hero(70vh, flex-start, center);
-            background-image: url(/img/EA-photo/7.png);
-            background-position-y: 0px;
-
-        }
-        h1 {
-            @include h2($blue1);
-            text-align: left;
-            margin: 0 0 0 4rem;
-            width: 100%;
-        }
+        @include hero(70vh, flex-start, center);
+        background-image: url(/img/EA-photo/7.jpg);
+        background-position-y: 0px;
+    }
+    h1 {
+        @include h2($blue1);
+        text-align: left;
+        width: 100%;
+    }
+    h2 {
+        @include h2($dark-blue1);
+        text-align: left;
+        width: 100%;
+    }
+    p {
+        @include p();
+        //display: flex;
+        width: 30%;
+        text-align: left;
+        margin: 0 0 0 4rem;
+        padding: 0.7em;
+        border-radius: 2%;
+        background-color: rgb(231, 231, 231, 0.6);
+    }
+    a {
+        width: 5rem;
+    }
+    .cursos {
         h2 {
-            @include h2($dark-blue1);
+            padding: 8rem;
+            text-align: center;
+        }
+        .listaCursos {
             width: 100%;
-            text-align: left;
-        }
-        p {
-            display: flex;
-            width: 30%;
-            font-size: 1.2rem;
-            text-align: left;
-            margin: 0 0 0 4rem;
-            padding: 0.7em;
-            border-radius: 2%;
-            background-color: rgb(231, 231, 231, 0.6);
-        }
-        a {
-            width: 5rem;
-        }
-        .cursos {
-            h2 {
-                padding: 8rem;
-                text-align: center;
-            }
-            .listaCursos {
+            display: grid;
+            //padding: 10%;
+            align-items: center;
+            margin: 1rem 0rem;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px 10px;
+            grid-template-areas:
+                "curso1 curso2 curso3"
+                "curso4 curso5 curso6";
+            .imagenCurso {
                 width: 100%;
-                display: grid;
-                //padding: 10%;
-                align-items: center;
-                margin: 1rem 0rem;
-
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
-                gap: 10px 10px;
-                grid-template-areas:
-                    "curso1 curso2 curso3"
-                    "curso4 curso5 curso6";
-                .imagenCurso {
-                    width: 100%;
-                    transition: all .15s ease-in-out;
-                }
-
-                .imagenCurso:hover {
-                    transform: scale(1.05);
-                }
-
-                h2 {
-                    @include h2($dark-blue1);
-                    margin: 0rem 4rem;
-                    align-items: left;
-                    width: 50%;
-                }
-
-                @for $i from 1 through 5 {
-                    .curso#{$i} {grid-area: curso#{$i}}
-                };    
-                /*
-                .curso1 {
-                    grid-area: curso1;
-                    //background-color: orange;
-                }
-                .curso2 {
-                    grid-area: curso2;
-                    //background-color: red;
-                }
-                .curso3 {
-                    grid-area: curso3;
-                    //background-color: violet;
-                }
-                .curso4 {
-                    grid-area: curso4;
-                    //background-color: green;
-                }
-                .curso5 {
-                    grid-area: curso5;
-                    //background-color: cyan;
-                } */
+                transition: all .15s ease-in-out;
             }
+            .imagenCurso:hover {
+                transform: scale(1.05);
+            }
+            h2 {
+                @include h2($dark-blue1);
+                margin: 0rem 4rem;
+                align-items: left;
+                width: 50%;
+            }
+            @for $i from 1 through 5 {
+                .curso#{$i} {grid-area: curso#{$i}}
+            };    
         }
     }
-//}
-//-- CONSULTORIAS
+}

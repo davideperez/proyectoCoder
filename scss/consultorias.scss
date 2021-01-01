@@ -1,7 +1,7 @@
 .heroConsultorias {
 
     @include hero(100vh, flex-start, center);
-    background-image: url(/img/EA-photo/5.png);
+    background-image: url(/img/EA-photo/5.jpg);
     
     h1 {
         @include h1(white);
@@ -17,8 +17,8 @@
         text-align: left;
     }
     p {
+        @include p();
         width: 30%;
-        font-size: 1.2rem;
         text-align: left;
         padding: 0.7em;
         margin: 1rem 0 1rem 4rem;

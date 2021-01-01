@@ -4,7 +4,7 @@
     .hero {
 
         @include hero(100vh, flex-end, center);
-        background-image: url(/img/EA-photo/1.png);
+        background-image: url(/img/EA-photo/1.jpg);
         h1 {
             @include h1($blue2);
             align-content: right;
@@ -16,13 +16,13 @@
             text-align: right;
         }
         p {
-            font-size: 1.2rem;
-            padding: 1.2em;
-            background-color: rgb(255, 255, 255, 0.7);
+            @include p();
+            width: 30%;
             border-radius: 2%;
             text-align: left;
             margin: 1rem 4rem;
-            width: 30%;
+            padding: 1.2em;
+            background-color: rgb(255, 255, 255, 0.7);
         }
         a {
             width: 5rem;
@@ -38,7 +38,7 @@
     .hero2 {
         
         @include hero(100vh, flex-start, center);
-        background-image: url(/img/EA-photo/6.png);
+        background-image: url(/img/EA-photo/6.jpg);
         h1 {
             @include h1($blue2);
             text-align: left;
@@ -49,8 +49,9 @@
             
         }
         p {
-            width: 30%;
             font-size: 1.2rem;
+            width: 30%;
+
             text-align: left;
             margin: 1rem 4rem;
             padding: 0.7em;
