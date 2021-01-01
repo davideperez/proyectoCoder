@@ -19,7 +19,7 @@ li {
   list-style: none;
 }
 
-.heroConsultorias .botonHero, .content .hero2 .botonHero, .content .hero .botonHero {
+.containerConsultorias .heroConsultorias .botonHero, .containerIndex .hero2 .botonHero, .containerIndex .hero .botonHero {
   letter-spacing: 0.1rem;
   padding: 0.7rem 1rem;
   text-align: center;
@@ -31,7 +31,7 @@ li {
   border: 2px solid #0636c3;
 }
 
-.heroConsultorias .botonHero:hover, .content .hero2 .botonHero:hover, .content .hero .botonHero:hover {
+.containerConsultorias .heroConsultorias .botonHero:hover, .containerIndex .hero2 .botonHero:hover, .containerIndex .hero .botonHero:hover {
   background: #011c5d;
   border: 2px solid #011c5d;
 }
@@ -77,14 +77,20 @@ li {
 }
 
 header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   display: grid;
   width: 100%;
   padding: 0rem 4rem;
   font-size: 1.2rem;
   font-weight: 700;
-  position: fixed;
   background-image: linear-gradient(white, rgba(255, 255, 255, 0.5));
   grid-area: header;
+}
+header .headerContainer {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
 }
 header nav {
   display: flex;
@@ -143,6 +149,8 @@ header nav ul .submenu li:hover a {
 }
 
 footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   display: grid;
   flex-direction: row;
   align-content: center;
@@ -160,8 +168,7 @@ footer img {
   margin: 0.1rem;
 }
 
-/* -------   Index  --------- */
-.content .hero {
+.containerIndex .hero {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -173,7 +180,7 @@ footer img {
   height: 100vh;
   background-image: url(/img/EA-photo/1.jpg);
 }
-.content .hero h1 {
+.containerIndex .hero h1 {
   color: #0636c3;
   font-size: 2rem;
   letter-spacing: 0.02rem;
@@ -185,7 +192,7 @@ footer img {
   align-content: right;
   text-align: right;
 }
-.content .hero h2 {
+.containerIndex .hero h2 {
   color: #011c5d;
   font-size: 3rem;
   letter-spacing: 0.01rem;
@@ -193,8 +200,9 @@ footer img {
   margin: 0rem 0 0 4rem;
   width: 40%;
   text-align: right;
+  margin: 0rem 4rem 0 0rem;
 }
-.content .hero p {
+.containerIndex .hero p {
   font-size: 1.2rem;
   width: 30%;
   border-radius: 2%;
@@ -203,13 +211,13 @@ footer img {
   padding: 1.2em;
   background-color: rgba(255, 255, 255, 0.7);
 }
-.content .hero a {
+.containerIndex .hero a {
   width: 5rem;
 }
-.content .hero .botonHero {
+.containerIndex .hero .botonHero {
   width: 140px;
 }
-.content .hero2 {
+.containerIndex .hero2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -221,7 +229,7 @@ footer img {
   height: 100vh;
   background-image: url(/img/EA-photo/6.jpg);
 }
-.content .hero2 h1 {
+.containerIndex .hero2 h1 {
   color: #0636c3;
   font-size: 2rem;
   letter-spacing: 0.02rem;
@@ -232,7 +240,7 @@ footer img {
   width: 50%;
   text-align: left;
 }
-.content .hero2 h2 {
+.containerIndex .hero2 h2 {
   color: #011c5d;
   font-size: 3rem;
   letter-spacing: 0.01rem;
@@ -241,7 +249,7 @@ footer img {
   width: 40%;
   text-align: left;
 }
-.content .hero2 p {
+.containerIndex .hero2 p {
   font-size: 1.2rem;
   width: 30%;
   text-align: left;
@@ -249,7 +257,6 @@ footer img {
   padding: 0.7em;
   background-color: white;
 }
-/* -------   cursos.html  --------- */
 .containerCursos {
   display: flex;
   flex-flow: row wrap;
@@ -360,7 +367,7 @@ footer img {
   grid-area: curso5;
 }
 
-.heroConsultorias {
+.containerConsultorias .heroConsultorias {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -372,7 +379,7 @@ footer img {
   height: 100vh;
   background-image: url(/img/EA-photo/5.jpg);
 }
-.heroConsultorias h1 {
+.containerConsultorias .heroConsultorias h1 {
   color: white;
   font-size: 2rem;
   letter-spacing: 0.02rem;
@@ -385,7 +392,7 @@ footer img {
   text-align: left;
   width: 50%;
 }
-.heroConsultorias h2 {
+.containerConsultorias .heroConsultorias h2 {
   color: #011c5d;
   font-size: 3rem;
   letter-spacing: 0.01rem;
@@ -396,7 +403,7 @@ footer img {
   margin: 0rem 0 0 4rem;
   text-align: left;
 }
-.heroConsultorias p {
+.containerConsultorias .heroConsultorias p {
   font-size: 1.2rem;
   width: 30%;
   text-align: left;
@@ -405,17 +412,49 @@ footer img {
   border-radius: 2%;
   background-color: rgba(231, 231, 231, 0.6);
 }
-.heroConsultorias a {
+.containerConsultorias .heroConsultorias a {
   width: 5rem;
 }
-.heroConsultorias .botonHero {
+.containerConsultorias .heroConsultorias .botonHero {
   width: 130px;
 }
-.contacto {
+.containerQS h1 {
+  color: #0636c3;
+  font-size: 2rem;
+  letter-spacing: 0.02rem;
+  font-weight: 900;
+  font-stretch: condensed;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 4rem 0 4rem;
+  width: 50%;
+  align-content: right;
+  text-align: right;
+}
+.containerQS h2 {
+  color: #011c5d;
+  font-size: 3rem;
+  letter-spacing: 0.01rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 0rem 0 0 4rem;
+  width: 40%;
+  text-align: right;
+  margin: 0rem 4rem 0 0rem;
+}
+.containerQS p {
+  font-size: 1.2rem;
+  width: 30%;
+  border-radius: 2%;
+  text-align: left;
+  margin: 1rem 4rem;
+  padding: 1.2em;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.containerContacto {
   display: flex;
   flex-flow: row wrap;
 }
-.contacto .contactHero {
+.containerContacto .contactHero {
   align-items: center;
   justify-content: left;
   height: 100vh;
@@ -424,7 +463,7 @@ footer img {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.contacto .contactHero h2 {
+.containerContacto .contactHero h2 {
   color: #011c5d;
   font-size: 3rem;
   letter-spacing: 0.01rem;
@@ -433,39 +472,23 @@ footer img {
   align-content: left;
   width: 50%;
 }
-.contacto form {
+.containerContacto form {
   width: 48%;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
 }
 
-/*
-
-.bodyGrid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.05fr 0.7fr 0.1fr;
-    grid-template-areas: 
-    "header"
-    "content"
-    "footer";
+.bodyGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.05fr 0.7fr 0.1fr;
+  grid-template-areas: "header" "content" "footer";
 }
 
-*/
-.container {
-  width: 90%;
-  max-width: 1440px;
-  margin: auto;
-}
-
-/* -------   Header  --------- */
-/* -------   Footer  --------- */
 /*
 @media (min-width: 576px) {
-
 }
-
 @media (min-width: 768px) {
     .hero {
         h1 {
@@ -476,27 +499,23 @@ footer img {
         }
     }
 }
-
 @media (min-width: 992px) {
-
 }
-
 @media (min-width: 1200px) { 
 
 }
-
 */
 /*
 
 9 y 10 boostraps.
 
 
-//////////////////////////  DUDAS
+/-------------------  DUDAS
 
 - No entiendo porque el header no queda centrado, queda con valores de position a su derecha.
 - Me gustaría que las imágenes llenen el ancho completo del site.
 
-//////////////////////////  To Do List
+/------------------ To Do List
 
 9- Boostrap.
     - Agregar grid de boostrap.
@@ -505,7 +524,7 @@ footer img {
 
 13- Aplicar SEO a la pagina.
 
-//////////////////////////  DONE
+/-----------------  DONE
 
 7- Aplicando Grids.
     - Aplicar Grid a vista de Cursos.

@@ -1,18 +1,22 @@
 header {
-
     display: grid;
     width: 100%;
     padding: 0rem 4rem;
     font-size: 1.2rem;
     font-weight: 700;
-    position: fixed;
+    //position: fixed;
     //background-color: rgb(255, 255, 255, 0.65);
     background-image:
     linear-gradient(
     white, rgb(255, 255, 255, 0.5));
 
     grid-area: header;
-
+    
+    .headerContainer {
+        width: 90%;
+        max-width: 1440px;
+        margin: auto;
+    }
     nav {
         display: flex;
         flex-flow: row;

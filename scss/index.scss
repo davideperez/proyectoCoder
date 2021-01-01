@@ -1,5 +1,4 @@
-/* -------   Index  --------- */
-.content {
+.containerIndex {
     //grid-area: content;
     .hero {
 
@@ -14,6 +13,7 @@
             @include h2($dark-blue1);
             //align-content: right;
             text-align: right;
+            margin: 0rem 4rem 0 0rem;
         }
         p {
             @include p();
@@ -64,4 +64,4 @@
             @extend %button1Hover;
         }
     }
-}
+};
