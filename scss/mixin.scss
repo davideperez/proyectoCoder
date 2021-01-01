@@ -18,6 +18,8 @@
     font-weight: 900;
     font-stretch: condensed;
     font-family: "Montserrat", sans-serif;
+    margin: 0 4rem 0 4rem;
+    width: 50%;
 }
 
 @mixin h2 ($color) {
@@ -25,4 +27,6 @@
     font-size: 3rem;
     letter-spacing: .01rem;
     font-family: "Montserrat", sans-serif;
+    margin: 0rem 0 0 4rem;
+    width: 40%;
 }

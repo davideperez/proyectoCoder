@@ -1,29 +1,20 @@
 /* -------   Index  --------- */
 .content {
-    grid-area: content;
+    //grid-area: content;
     .hero {
 
         @include hero(100vh, flex-end, center);
         background-image: url(/img/EA-photo/1.png);
-
-
         h1 {
             @include h1($blue2);
-            text-align: right;
-            margin: 0 4rem 0 0rem;
             align-content: right;
-            width: 50%;
+            text-align: right;
         }
-
         h2 {
             @include h2($dark-blue1);
+            //align-content: right;
             text-align: right;
-            
-            margin: 0rem 4rem;
-            align-content: right;
-            width: 50%;
         }
-
         p {
             font-size: 1.2rem;
             padding: 1.2em;
@@ -40,33 +31,23 @@
             @extend %button1;
             width: 140px;
         }
-        
         .botonHero:hover {
             @extend %button1Hover;
         }
     }
-
     .hero2 {
         
         @include hero(100vh, flex-start, center);
         background-image: url(/img/EA-photo/6.png);
-        
         h1 {
             @include h1($blue2);
-
-            margin: 0 4rem 0 4rem;
             text-align: left;
-            width: 50%;
         }
-
         h2 {
             @include h2($dark-blue1);
-
-            width: 40%;
-            margin: 0rem 0 0 4rem;
             text-align: left;
+            
         }
-
         p {
             width: 30%;
             font-size: 1.2rem;
@@ -75,14 +56,11 @@
             padding: 0.7em;
             background-color: white;
         }
-        
         .botonHero {
-        @extend %button1;
-
+            @extend %button1;
         }
-
         .botonHero:hover {
-        @extend %button1Hover;
+            @extend %button1Hover;
         }
     }
 }
