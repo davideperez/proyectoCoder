@@ -1,0 +1,6 @@
+@media only screen and (max-width: 500px) {
+  header label {
+    display: block;
+    cursor: pointer;
+  }
+}

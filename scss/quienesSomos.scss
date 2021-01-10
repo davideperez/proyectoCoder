@@ -1,18 +1,24 @@
 .containerQS {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.8fr 1.2fr;
     grid-template-rows: 0.6fr 0.2fr 0.2fr;
     gap: 0px 0px;
     grid-template-areas:
       "heroQS heroQS"
       "imgVicente bioVicente"
       "imgKarina bioKarina";
+    
+    margin: 0rem 4rem 0 4rem;
+    padding: 0rem 4rem 0 4rem;
 
     .heroQS {
         grid-area: heroQS;
-        
+
         @include hero(100vh, center, center);
-        background-image: url(/img/EA-photo/13.jpg)  center;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)), url(/img/EA-photo/13.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+
         h1 {
             @include h1($blue2);
             align-content: center;
@@ -22,22 +28,24 @@
             @include h2($dark-blue1);
             //align-content: right;
             text-align: center;
-            margin: 0rem 4rem 0 0rem;
         }
     }
     .imgVicente {
         grid-area: imgVicente;
         place-self: center;
+        padding: 4rem;
     }
     .bioVicente {
         grid-area: bioVicente;
+        place-self: center;
         h3 {
+            font-size: 2rem;
+            color: $blue2;
             margin: 2rem;
         }
         p {
             @include p();
             width: 80%;
-            border-radius: 2%;
             text-align: left;
             margin: 0;
             padding: 1.2em;
@@ -47,9 +55,12 @@
     .imgKarina {
         grid-area: imgKarina;
         place-self: center;
+        margin: 2rem;
     }
     .bioKarina {
         grid-area: bioKarina;
+        place-self: center;
+
         h3 {
             font-size: 2rem;
             color: $blue2;

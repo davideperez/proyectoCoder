@@ -1,10 +1,9 @@
-
 @mixin hero ($height, $align, $justify){
     display: flex;
     flex-direction: column;
     align-items: $align;
     justify-content: $justify;
-    width: 100%;
+    //width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +18,7 @@
     font-stretch: condensed;
     font-family: "Montserrat", sans-serif;
     margin: 0 4rem 0 4rem;
-    width: 50%;
+    //width: 50%;
 }
 
 @mixin h2 ($color) {
@@ -28,7 +27,7 @@
     letter-spacing: .01rem;
     font-family: "Montserrat", sans-serif;
     margin: 0rem 0 0 4rem;
-    width: 40%;
+    //width: 40%;
 }
 
 @mixin p {

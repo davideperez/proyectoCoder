@@ -98,6 +98,14 @@ header nav {
   align-items: center;
   justify-content: space-between;
 }
+header nav #toggle {
+  display: none;
+}
+header nav label {
+  margin: 0 40px 0 0;
+  font-size: 3rem;
+  line-height: 3rem;
+}
 header nav .logo {
   width: 4rem;
 }
@@ -173,7 +181,6 @@ footer img {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -188,7 +195,6 @@ footer img {
   font-stretch: condensed;
   font-family: "Montserrat", sans-serif;
   margin: 0 4rem 0 4rem;
-  width: 50%;
   align-content: right;
   text-align: right;
 }
@@ -198,7 +204,6 @@ footer img {
   letter-spacing: 0.01rem;
   font-family: "Montserrat", sans-serif;
   margin: 0rem 0 0 4rem;
-  width: 40%;
   text-align: right;
   margin: 0rem 4rem 0 0rem;
 }
@@ -222,7 +227,6 @@ footer img {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -237,7 +241,6 @@ footer img {
   font-stretch: condensed;
   font-family: "Montserrat", sans-serif;
   margin: 0 4rem 0 4rem;
-  width: 50%;
   text-align: left;
 }
 .containerIndex .hero2 h2 {
@@ -246,7 +249,6 @@ footer img {
   letter-spacing: 0.01rem;
   font-family: "Montserrat", sans-serif;
   margin: 0rem 0 0 4rem;
-  width: 40%;
   text-align: left;
 }
 .containerIndex .hero2 p {
@@ -269,7 +271,6 @@ footer img {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -283,7 +284,6 @@ footer img {
   letter-spacing: 0.01rem;
   font-family: "Montserrat", sans-serif;
   margin: 0rem 0 0 4rem;
-  width: 40%;
   text-align: left;
   width: 100%;
 }
@@ -293,7 +293,6 @@ footer img {
   letter-spacing: 0.01rem;
   font-family: "Montserrat", sans-serif;
   margin: 0rem 0 0 4rem;
-  width: 40%;
   text-align: left;
   width: 100%;
 }
@@ -336,7 +335,6 @@ footer img {
   letter-spacing: 0.01rem;
   font-family: "Montserrat", sans-serif;
   margin: 0rem 0 0 4rem;
-  width: 40%;
   margin: 0rem 4rem;
   align-items: left;
   width: 50%;
@@ -372,7 +370,6 @@ footer img {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -387,7 +384,6 @@ footer img {
   font-stretch: condensed;
   font-family: "Montserrat", sans-serif;
   margin: 0 4rem 0 4rem;
-  width: 50%;
   margin: 0 4rem 0 4rem;
   text-align: left;
   width: 50%;
@@ -398,7 +394,6 @@ footer img {
   letter-spacing: 0.01rem;
   font-family: "Montserrat", sans-serif;
   margin: 0rem 0 0 4rem;
-  width: 40%;
   width: 50%;
   margin: 0rem 0 0 4rem;
   text-align: left;
@@ -420,10 +415,12 @@ footer img {
 }
 .containerQS {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.8fr 1.2fr;
   grid-template-rows: 0.6fr 0.2fr 0.2fr;
   gap: 0px 0px;
   grid-template-areas: "heroQS heroQS" "imgVicente bioVicente" "imgKarina bioKarina";
+  margin: 0rem 4rem 0 4rem;
+  padding: 0rem 4rem 0 4rem;
 }
 .containerQS .heroQS {
   -ms-grid-row: 1;
@@ -434,12 +431,13 @@ footer img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  background-image: url(/img/EA-photo/13.jpg) center;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white), url(/img/EA-photo/13.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .containerQS .heroQS h1 {
   color: #0636c3;
@@ -449,7 +447,6 @@ footer img {
   font-stretch: condensed;
   font-family: "Montserrat", sans-serif;
   margin: 0 4rem 0 4rem;
-  width: 50%;
   align-content: center;
   text-align: center;
 }
@@ -459,28 +456,29 @@ footer img {
   letter-spacing: 0.01rem;
   font-family: "Montserrat", sans-serif;
   margin: 0rem 0 0 4rem;
-  width: 40%;
   text-align: center;
-  margin: 0rem 4rem 0 0rem;
 }
 .containerQS .imgVicente {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: imgVicente;
   place-self: center;
+  padding: 4rem;
 }
 .containerQS .bioVicente {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: bioVicente;
+  place-self: center;
 }
 .containerQS .bioVicente h3 {
+  font-size: 2rem;
+  color: #0636c3;
   margin: 2rem;
 }
 .containerQS .bioVicente p {
   font-size: 1.2rem;
   width: 80%;
-  border-radius: 2%;
   text-align: left;
   margin: 0;
   padding: 1.2em;
@@ -491,11 +489,13 @@ footer img {
   -ms-grid-column: 1;
   grid-area: imgKarina;
   place-self: center;
+  margin: 2rem;
 }
 .containerQS .bioKarina {
   -ms-grid-row: 5;
   -ms-grid-column: 3;
   grid-area: bioKarina;
+  place-self: center;
 }
 .containerQS .bioKarina h3 {
   font-size: 2rem;
@@ -519,7 +519,6 @@ footer img {
   font-stretch: condensed;
   font-family: "Montserrat", sans-serif;
   margin: 0 4rem 0 4rem;
-  width: 50%;
   align-content: right;
   text-align: right;
 }
@@ -529,7 +528,6 @@ footer img {
   letter-spacing: 0.01rem;
   font-family: "Montserrat", sans-serif;
   margin: 0rem 0 0 4rem;
-  width: 40%;
   text-align: right;
   margin: 0rem 4rem 0 0rem;
 }
@@ -578,6 +576,10 @@ footer img {
   grid-template-rows: 0.05fr 0.7fr 0.1fr;
   grid-template-areas: "header" "content" "footer";
 }
+.bodyGrid .icon {
+  display: none;
+  width: 2rem;
+}
 
 .padding {
   padding: 0 8rem 0 8rem;
@@ -602,6 +604,19 @@ footer img {
 
 }
 */
+@media only screen and (max-width: 768px) {
+  .bodyGrid .icon {
+    display: block;
+  }
+  .bodyGrid .close {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+  }
+  .bodyGrid header nav ul {
+    display: none;
+  }
+}
 /*
 
 9 y 10 boostraps.
